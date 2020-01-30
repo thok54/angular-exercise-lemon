@@ -1,5 +1,6 @@
 <h2>Members Page</h2>
-<button (click)="loadMembers()">Load</button>
+<input #organization type="text" class="form-control" />
+<button (click)="loadMembers(organization.value)">Load</button>
 <table>
   <thead app-member-head></thead>
   <tbody>
